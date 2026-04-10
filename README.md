@@ -1,31 +1,31 @@
-## 고객 이탈 분류 ML 및 인사이트분석
+# 고객 이탈 분류 ML 및 인사이트분석
 
-## 1. 기간 : 
+### 1. 기간 : 
 2026년 4월 10일 
 
-## 2. Tech Stack
+### 2. Tech Stack
 
-### Data Analysis
+#### Data Analysis
 - pandas, numpy
 
-### Visualization
+#### Visualization
 - matplotlib
 
-### Machine Learning
+#### Machine Learning
 - scikit-learn
 
-### Boosting Models
+#### Boosting Models
 - XGBoost, LightGBM, CatBoost
 
-### AutoML & Optimization
+#### AutoML & Optimization
 - PyCaret, Optuna
 
-### Model Interpretation
+#### Model Interpretation
 - SHAP
 
-## 3. 데이터 출처: 캐글 Bank Customer Churn Dataset (row: 10000, col:12)
+### 3. 데이터 출처: 캐글 Bank Customer Churn Dataset (row: 10000, col:12)
 
-## 4. Data Preprocessing (데이터 전처리)
+### 4. Data Preprocessing (데이터 전처리)
 
 ### 4-1). 불필요한 컬럼 제거
 - 고객 고유 식별자(customer_id)는 예측에 불필요한 개별 식별 정보 제거
