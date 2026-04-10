@@ -14,7 +14,8 @@
 | AutoML & Optimization    | PyCaret, Optuna                            |
 | Model Interpretation     | SHAP                                       |
 
-### 3. 데이터 출처: 캐글 Bank Customer Churn Dataset (row: 10000, col:12)
+### 3. 데이터 출처: 
+캐글 [Bank Customer Churn Dataset](https://www.kaggle.com/datasets/gauravtopre/bank-customer-churn-dataset) (row: 10000, col:12)
 
 ### 4. Data Preprocessing (데이터 전처리)
 
