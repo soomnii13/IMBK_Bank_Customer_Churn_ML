@@ -19,7 +19,7 @@
 
 ### 4. Data Preprocessing (데이터 전처리)
 
-## 🔧 Data Preprocessing
+## Data Preprocessing
 
 | Step | Process                | Description                                                                 |
 |------|-----------------------|-----------------------------------------------------------------------------|
