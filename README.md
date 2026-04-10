@@ -1,10 +1,10 @@
 # IMBK_Bank_Customer_Churn_ML
 
-## 프로젝트명: 고객 이탈 분류 ML 및 인사이트분석
+## 1. 프로젝트명: 고객 이탈 분류 ML 및 인사이트분석
 
-| 기간 : 2026년 4월 10일 |
+## 2. 기간 : 2026년 4월 10일 
 ---
-## Tech Stack
+## 3. Tech Stack
 
 ### Data Analysis
 - pandas, numpy
@@ -24,9 +24,9 @@
 ### Model Interpretation
 - SHAP
 ---
-### 데이터 출처: 캐글 Bank Customer Churn Dataset (row: 10000, col:12)
+## 4. 데이터 출처: 캐글 Bank Customer Churn Dataset (row: 10000, col:12)
 ---
-## Data Preprocessing (데이터 전처리)
+## 5. Data Preprocessing (데이터 전처리)
 
 ### 1. 불필요한 컬럼 제거
 - 고객 고유 식별자(customer_id)는 예측에 불필요한 개별 식별 정보 제거
@@ -46,7 +46,7 @@
 
 --- 
 
-## EDA 및 해석
+## 6. EDA 및 해석
 ### 1. Active Member에 따른 이탈률 분석
 <img width="500" height="400" alt="활성화 고객" src="https://github.com/user-attachments/assets/1fe8b4d5-8488-4981-b92d-2c6e7c48e7e4" />
 
@@ -64,7 +64,7 @@
   - 리워드 제공
   - 개인화 서비스 추천
 ---
-### 1. AutoML (PyCaret)
+## 7-1. AutoML (PyCaret)
 - PyCaret을 활용하여 다양한 분류 모델을 자동으로 비교하고 성능을 평가함
 - 클래스 불균형을 고려하여 Accuracy가 아닌 F1-score를 기준으로 모델을 선정
 
@@ -94,13 +94,13 @@ Top Models (Selected by PyCaret)
 
 ---
 
-### 2. Hyperparameter Tuning (Optuna)
+## 7-2. Hyperparameter Tuning (Optuna)
 - 상위 모델을 대상으로 하이퍼파라미터 최적화 수행
 
 <img width="400" height="200" alt="최적화" src="https://github.com/user-attachments/assets/a0028bd3-7e50-4409-b8dc-f840f75efb0f" />
 
 ---
-### 3. Stacking
+## 7-3. Stacking
 - 성능이 우수한 모델(LightGBM, CatBoost, XGBoost)을 Base Model로 구성
 - Logistic Regression을 Meta Model로 활용하여 Stacking 수행
   
@@ -108,11 +108,11 @@ Top Models (Selected by PyCaret)
 
 
 ---
-### 4. SHAP value
+## 7-4. SHAP value
 
 <img width="1000" height="700" alt="분석결과" src="https://github.com/user-attachments/assets/f00382ed-b06f-439f-9ebf-d7b946183d39" />
 
-###  SHAP Analysis
+## 7-5. SHAP Analysis
 
 - 주요 영향 변수: age, active_member, balance, product_number, credit_score
 
@@ -124,7 +124,7 @@ Top Models (Selected by PyCaret)
 
 - credit_card, tenure, estimated_salary 변수는 SHAP 값이 0 근처에 분포하여 상대적으로 영향력이 낮음
 ---
-### 인사이트
+## 8. 인사이트
 
 - SHAP 분석 결과, product_number, age, active_member, balance가 주요 영향 변수로 확인됨
 
@@ -136,7 +136,7 @@ Top Models (Selected by PyCaret)
 
 - 단일 기준이 아닌 다변수 기반의 세분화 전략을 적용할 경우, 고객 유지 전략의 효과를 더욱 높일 수 있음
 ---
-### Reference
+## 9. Reference
 
 - PyCaret: AutoML 기반 모델 비교 및 선택
 - Optuna: 하이퍼파라미터 최적화
